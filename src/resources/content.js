@@ -53,7 +53,7 @@ const home = {
   headline: <>Bringing ideas to life</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Myanimelist  Tui App</strong></>,
+    title: <>Recent project: <strong className="ml-4">HCA platform</strong></>,
     href: "/work/building-mal-cli",
   },
   subline: (
