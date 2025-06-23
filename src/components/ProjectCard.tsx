@@ -2,6 +2,7 @@
 
 import {
   AvatarGroup,
+  Avatar,
   Carousel,
   Column,
   Flex,
@@ -17,7 +18,7 @@ interface ProjectCardProps {
   title: string;
   content: string;
   description: string;
-  avatars: { src: string }[];
+  avatars: { src: string; linkedIn?: string }[];
   link: string;
 }
 
@@ -56,7 +57,25 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         )}
         {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
           <Column flex={7} gap="16">
-            {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
+            {avatars?.length > 0 && (
+              <Flex gap="8" vertical="center">
+                {avatars.map((avatar, idx) =>
+                  avatar.linkedIn ? (
+                    <SmartLink
+                      key={avatar.src + idx}
+                      href={avatar.linkedIn}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: "inline-block" }}
+                    >
+                      <Avatar src={avatar.src} size="m" />
+                    </SmartLink>
+                  ) : (
+                    <Avatar key={avatar.src + idx} src={avatar.src} size="m" />
+                  )
+                )}
+              </Flex>
+            )}
             {description?.trim() && (
               <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
                 {description}
