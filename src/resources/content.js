@@ -189,11 +189,12 @@ const about = {
         title: "Linux",
         description: <>I Use Arch By The Way</>,
         images: [
-          {
-            src: "/images/skills/arch.png",
-            width: 16,
-            height: 13,
-          }
+          // {
+          //   src: "/images/skills/arch.png",
+          //   width: 16,
+            
+          //   height: 13,
+          // }
         ]
       },
       {
