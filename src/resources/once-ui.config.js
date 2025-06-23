@@ -7,13 +7,13 @@ const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/blog": true,  
+  "/gallery": false,
 };
 
 const display = {
-  location: true,
-  time: true,
+  location: false,
+  time: false,
   themeSwitcher: true
 };
 
@@ -88,13 +88,13 @@ const dataStyle = {
 
 const effects = {
   mask: {
-    cursor: false,
+    cursor: true,
     x: 50,
     y: 0,
     radius: 100,
   },
   gradient: {
-    display: false,
+    display: true,
     opacity: 100,
     x: 50,
     y: 60,
