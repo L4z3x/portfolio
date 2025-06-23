@@ -150,32 +150,66 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "backend",
-        description: <>Able to build powerfull backends with django.</>,
+        title: "Back-End Developement",
+        description: <>Able to build powerfull Back-Ends with <strong>django</strong>.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "hca site",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "khatamat-platform",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   alt: "hca site",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   alt: "khatamat-platform",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
+      {
+        title: "Rust Programming",
+        description: <>familiar with building Software with <strong>Rust</strong>.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          // {
+          //   alt: "hca site",
+
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   alt: "khatamat-platform",
+          //   width: 16,
+          //   height: 9,
+          // },
+    
+        ],
+      },
+      {
+        title: "Linux",
+        description: <>I Use Arch By The Way</>,
+        images: [
+          {
+            src: "/images/skills/arch.png",
+            width: 16,
+            height: 13,
+          }
+        ]
+      },
+      {
+        title: "Python Programming",
+        description:  <>familiar with python language for various purposes</>,
+        images: []
+      }
       ],
+
   },
 };
 
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about tech and architucture...",
+  title: "Writing about Tech  ...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
