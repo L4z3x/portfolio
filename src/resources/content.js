@@ -46,7 +46,7 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/image.png",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
@@ -54,7 +54,7 @@ const home = {
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">HCA platform</strong></>,
-    href: "/work/building-mal-cli",
+    href: "/work/hca-website",
   },
   subline: (
     <>
