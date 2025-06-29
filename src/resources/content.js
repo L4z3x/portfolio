@@ -18,8 +18,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the
+      intersection of creativity and engineering.
     </>
   ),
 };
@@ -53,12 +53,20 @@ const home = {
   headline: <>Bringing ideas to life</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">HCA platform</strong></>,
+    title: (
+      <>
+        Recent project: <strong className="ml-4">HCA platform</strong>
+      </>
+    ),
     href: "/work/hca-website",
   },
   subline: (
     <>
-       I'm Moussa, a CS student   at <strong href="https://estin.dz" target="_blank" rel="noopener noreferrer" >Estin</strong>, I enjoy building 
+      I'm Moussa, a CS student at{" "}
+      <strong href="https://estin.dz" target="_blank" rel="noopener noreferrer">
+        Estin
+      </strong>
+      , I enjoy building
       <br /> software solutions. After hours, I build my own projects.
     </>
   ),
@@ -85,7 +93,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-       Moussa is an Algeria-based software engineer with a passion for solving real-world problems through clean, efficient, and purposeful code. His work spans command-line tools, desktop integrations, web platforms, and the convergence of low-level systems and modern web technologies.
+        Moussa is an Algeria-based software engineer with a passion for solving
+        real-world problems through clean, efficient, and purposeful code. His
+        work spans command-line tools, desktop integrations, web platforms, and
+        the convergence of low-level systems and modern web technologies.
       </>
     ),
   },
@@ -99,12 +110,12 @@ const about = {
         role: "Senior Design Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Redesigned the UI/UX for the FLY platform, resulting in a 20%
+            increase in user engagement and 30% faster load times.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Spearheaded the integration of AI tools into design workflows,
+            enabling designers to iterate 50% faster.
           </>,
         ],
         images: [
@@ -123,12 +134,12 @@ const about = {
         role: "Lead Designer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed a design system that unified the brand across multiple
+            platforms, improving design consistency by 40%.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Led a cross-functional team to launch a new product line,
+            contributing to a 15% increase in overall company revenue.
           </>,
         ],
         images: [],
@@ -151,7 +162,11 @@ const about = {
     skills: [
       {
         title: "Back-End Developement",
-        description: <>Able to build powerfull Back-Ends with <strong>django</strong>.</>,
+        description: (
+          <>
+            Able to build powerfull Back-Ends with <strong>django</strong>.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           // {
@@ -168,12 +183,15 @@ const about = {
       },
       {
         title: "Rust Programming",
-        description: <>familiar with building Software with <strong>Rust</strong>.</>,
+        description: (
+          <>
+            familiar with building Software with <strong>Rust</strong>.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           // {
           //   alt: "hca site",
-
           //   width: 16,
           //   height: 9,
           // },
@@ -182,7 +200,6 @@ const about = {
           //   width: 16,
           //   height: 9,
           // },
-    
         ],
       },
       {
@@ -192,18 +209,16 @@ const about = {
           // {
           //   src: "/images/skills/arch.png",
           //   width: 16,
-            
           //   height: 13,
           // }
-        ]
+        ],
       },
       {
         title: "Python Programming",
-        description:  <>familiar with python language for various purposes</>,
-        images: []
-      }
-      ],
-
+        description: <>familiar with python language for various purposes</>,
+        images: [],
+      },
+    ],
   },
 };
 

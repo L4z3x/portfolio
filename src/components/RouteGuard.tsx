@@ -87,10 +87,9 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
   if (!isRouteEnabled) {
 		return <NotFound />;
 	}
-
   if (isPasswordRequired && !isAuthenticated) {
     return (
-      <Column paddingY="128" maxWidth={24} gap="24" center>
+      <Column paddingY="128" maxWidth="m" gap="24" center>
         <Heading align="center" wrap="balance">
           This page is password protected
         </Heading>

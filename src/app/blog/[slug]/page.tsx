@@ -56,7 +56,7 @@ export default async function Blog({
     <Row fillWidth>
       <Row maxWidth={12} hide="m"/>
       <Row fillWidth horizontal="center">
-        <Column as="section" maxWidth="xs" gap="l">
+        <Column as="section" maxWidth="m" gap="l">
           <Schema
             as="blogPosting"
             baseURL={baseURL}

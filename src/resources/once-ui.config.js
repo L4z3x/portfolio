@@ -7,14 +7,14 @@ const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,  
+  "/blog": true,
   "/gallery": false,
 };
 
 const display = {
   location: false,
   time: false,
-  themeSwitcher: true
+  themeSwitcher: true,
 };
 
 // Enable password protection on selected routes
@@ -63,18 +63,18 @@ const style = {
   theme: "system", // dark | light | system
   neutral: "gray", // sand | gray | slate | custom
   brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
-  accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
+  accent: "indigo", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   solid: "contrast", // color | contrast
   solidStyle: "flat", // flat | plastic
   border: "playful", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
-  scaling: "100" // 90 | 95 | 100 | 105 | 110
+  scaling: "110", // 90 | 95 | 100 | 105 | 110
 };
 
 const dataStyle = {
-  variant: "gradient", // flat | gradient | outline
-  mode: "categorical", // categorical | divergent | sequential
+  variant: "gradiant", // flat | gradient | outline
+  mode: "sequential", // categorical | divergent | sequential
   height: 24, // default chart height
   axis: {
     stroke: "var(--neutral-alpha-weak)",
@@ -82,20 +82,20 @@ const dataStyle = {
   tick: {
     fill: "var(--neutral-on-background-weak)",
     fontSize: 11,
-    line: false
+    line: false,
   },
 };
 
 const effects = {
   mask: {
-    cursor: true,
+    cursor: false,
     x: 50,
     y: 0,
     radius: 100,
   },
   gradient: {
     display: true,
-    opacity: 100,
+    opacity: 60,
     x: 50,
     y: 60,
     width: 100,
@@ -105,7 +105,7 @@ const effects = {
     colorEnd: "page-background",
   },
   dots: {
-    display: true,
+    display: false,
     opacity: 40,
     size: "2",
     color: "brand-background-strong",
@@ -118,7 +118,7 @@ const effects = {
     height: "0.25rem",
   },
   lines: {
-    display: false,
+    display: true,
     opacity: 100,
     color: "neutral-alpha-weak",
     size: "16",
@@ -168,7 +168,7 @@ const mailchimp = {
       thickness: 1,
       angle: 90,
     },
-  }
+  },
 };
 
 // default schema data
@@ -182,9 +182,21 @@ const schema = {
 
 // social links
 const sameAs = {
-  threads: "https://www.threads.com/@once_ui",
+  // threads: "https://www.threads.com/@once_ui",
   linkedin: "https://www.linkedin.com/company/once-ui/",
   discord: "https://discord.com/invite/5EyAQ4eNdS",
 };
 
-export { display, mailchimp, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };
+export {
+  display,
+  mailchimp,
+  routes,
+  protectedRoutes,
+  baseURL,
+  fonts,
+  style,
+  schema,
+  sameAs,
+  effects,
+  dataStyle,
+};
