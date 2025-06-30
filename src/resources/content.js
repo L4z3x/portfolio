@@ -42,6 +42,11 @@ const social = [
     icon: "email",
     link: `mailto:${person.email}`,
   },
+  {
+    name: "X",
+    icon: "x",
+    link: "https://x.com/l4z3x_m",
+  },
 ];
 
 const home = {
@@ -50,7 +55,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Bringing ideas to life</>,
+  headline: <>Diving Into Tech World</>,
   featured: {
     display: true,
     title: (
@@ -67,7 +72,7 @@ const home = {
         Estin
       </strong>
       , I enjoy building
-      <br /> software solutions. After hours, I build my own projects.
+      <br /> software solutions. and learning Cyber security.
     </>
   ),
 };
